@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+	
+	<!--Annotations activation-->
+	<context:annotation-config/>
+	<context:component-scan base-package="com.app"/>
+	<aop:aspectj-autoproxy/>
+	<!-- DB Configuration -->
+	<!-- 1.DMDS Obj -->
+	<bean
+	  class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+	  name="dsObj"
+	  p:driverClassName="oracle.jdbc.driver.OracleDriver"
+	  p:url="jdbc:oracle:thin:@localhost:1521:xe"
+	  p:username="system"
+	  p:password="sys"
+	/>
+	<!-- 2.ASFB Obj -->
+	<bean
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"
+		name="sfObj"
+	>
+		<property name="dataSource">
+			<ref bean="dsObj"/>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+		<property name="annotatedClasses">
+			<list>
+			 <value>com.app.model.Item</value>
+			 <value>com.app.model.User</value>
+             <value>com.app.model.Customer</value>
+			 <value>com.app.model.Location</value>
+			 <value>com.app.model.Vendor</value>
+			 <value>com.app.model.UploadFile</value>
+			</list>
+		</property>
+	</bean>
+	<!-- 3.HT Obj -->
+	<bean
+		class="org.springframework.orm.hibernate3.HibernateTemplate"
+		name="htObj"
+	>
+		<property name="sessionFactory">
+			<ref bean="sfObj"/>
+		</property>
+	</bean>
+	
+	<!-- UI Configurations -->
+	<!-- View Resolver Obj -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsps/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+	
+	<!-- This is for fileuploads concept using apache commons-file upload -->
+	<bean
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
+		name="multipartResolver"
+	>
+		<property name="maxUploadSize" value="20971520" />
+		<property name="maxInMemorySize" value="10485760" />
+	</bean>
+	
+	<!-- Providing XML views for excel and PDF -->
+	<bean
+		class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="location">
+			<value>/WEB-INF/spring-views.xml</value>
+		</property>
+		<property name="order" value="0"/>
+	</bean>
+	
+	<!-- Sending Email using Spring Email -->
+	<bean
+	name="mailSender"
+	class="org.springframework.mail.javamail.JavaMailSenderImpl"
+	>
+		<property name="host" value="smtp.gmail.com"/>
+		<property name="port" value="587"/>
+		<property name="username" value="puspdeep.raj@gmail.com"/>
+		<property name="password" value="itm12345"/>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+			</props>
+		</property>
+	</bean>	
+</beans>	

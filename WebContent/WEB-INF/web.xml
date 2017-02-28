@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/sample-servlet.xml</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+ 
+    <filter>
+    <filter-name>SessionCheckFilter</filter-name>
+    <filter-class>com.app.filter.SessionCheckFilter</filter-class>
+    <init-param>
+    	<param-name>avoid-urls</param-name>
+    	<param-value>/VDM_System/,/VDM_System,/VDM_System/mvc/showLogin,/VDM_System/mvc/regUser,/VDM_System/mvc/loginUser,/VDM_System/mvc/logout</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>SessionCheckFilter</filter-name>
+    <url-pattern>/mvc/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>sample</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sample</servlet-name>
+    <url-pattern>/mvc/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
