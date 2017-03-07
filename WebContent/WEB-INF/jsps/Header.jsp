@@ -1,5 +1,6 @@
 
-<link href='../css/style.css' type='text/css' rel='stylesheet'/>
+<link href='../css/header.css' type='text/css' rel='stylesheet'/>
+
 <!-- Start of template_header_wrapper -->
 <header id="template_header_wrapper">
   <div id="template_header"> 
@@ -15,18 +16,28 @@
       </nav>
 	
 	  <div id="site_title">
-        <h1><a href="index.jsp"><img  width="149" src="IMG/logo.png" alt="Priyakart" /></a></h1>
+        <h1><a href="index.jsp"><img  width="149" src="../imgs/logo.png" alt="Priyakart" /></a></h1>
       </div>
- 
-     <div id="search_box">
-        <form action="#" method="get">
-           <input type="text" value="Search for Products Brands and More" name="search" size="60" id="searchfield" 
-		    title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
-        </form>
-     </div>
-	 <div id="cart_button">
-	    <button type="submit" name="cart" value="CART" id="cart"><img width="60" height="30" src="IMG/cart.png"/></button>
+	  <div id="search_box">
+          <form action="#" method="post">
+              <input type="text"  id="searchfield" placeholder="Search for Product,Brands and More">
+              <button type="submit"  id="btn_search" name="search"><img width="60" height="30" src="../imgs/search_icon.ico"/></button>
+          </form>
+	  </div>
+	  <div id="cart_button">
+	    <button type="submit" name="cart" value="CART" id="cart"><img width="60" height="30" src="../imgs/cart.png"/></button>
 	 </div>
 	 
+       <nav id='template_menu'>
+        <ul>
+         <li><a href="#">ELECTRONICS</a></li>
+         <li><a href="#">MEN</a></li>
+         <li><a href="#">WOMEN</a></li>
+         <li><a href="#">HOME&FURNITURE </a></li>
+         <li><a href="#">BABY&KIDS </a></li>
+         <li><a href="#">APPLIANCES</a></li>
+         <li><a href="#">BOOKS&MORE </a></li>
+       </ul>
+     </nav>	
   </div> <!-- end of template_header -->
 </header> <!-- end of template_header_wrapper -->

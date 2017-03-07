@@ -1,18 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-<%@include file="Master.jsp" %>
+<title>home</title>
+<link href='../css/header.css' type='text/css' rel='stylesheet'/>
+<%@include file="Header.jsp" %>
 
-<h1> Welcome To home page</h1>
+<section id="template_content_wrapper">
 
+	<div id="template_content">
+    
+        
+    
+    </div> <!-- end of content -->
 
+</section>
 
 <%@include file="Footer.jsp" %>
-</body>
-</html>

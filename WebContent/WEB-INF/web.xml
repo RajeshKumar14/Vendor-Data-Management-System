@@ -14,7 +14,7 @@
     <filter-class>com.app.filter.SessionCheckFilter</filter-class>
     <init-param>
     	<param-name>avoid-urls</param-name>
-    	<param-value>/VDM_System/,/VDM_System,/VDM_System/mvc/showLogin,/VDM_System/mvc/regUser,/VDM_System/mvc/loginUser,/VDM_System/mvc/logout</param-value>
+    	<param-value>/VDM_System/,/VDM_System,/VDM_System/mvc/showLogin,/VDM_System/mvc/index,/VDM_System/mvc/regUser,/VDM_System/mvc/loginUser,/VDM_System/mvc/logout</param-value>
     </init-param>
   </filter>
   <filter-mapping>

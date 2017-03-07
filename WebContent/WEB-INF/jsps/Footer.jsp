@@ -1,5 +1,4 @@
 
-
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +52,7 @@
 			</div>
 
 			<div class="footer-right">
-			    <h3>About the company</h3>
+			    <h3>About the Company</h3>
                  <p class="footer-company-about">
 				 <span></span>
 					Managed the all type of product and process to deliver to the customer .Main focus on reduced the processing time and provide good Product and facility.
