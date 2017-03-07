@@ -9,7 +9,7 @@
 
 	<div id="template_content">
     
-        
+      <h2> Under Construction</h2>
     
     </div> <!-- end of content -->
 

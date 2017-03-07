@@ -10,8 +10,8 @@
           <li><a href="#">GiftCard </a></li>
           <li><a href="#">Customer Care </a></li>
           <li><a href="#">Track Order</a></li>
-          <li><a href="#">SignUp </a></li>
-          <li><a href="#">LogIn </a></li>
+          <li><a href="regUser">SignUp </a></li>
+          <li><a href="showLogin">LogIn </a></li>
         </ul>
       </nav>
 	
