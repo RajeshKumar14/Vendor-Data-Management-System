@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.app.model.Customer;
+import com.app.services.ICustomerServices;
 import com.app.util.CodecUtil;
 
 @Component
@@ -11,8 +12,17 @@ public class CustomerValidator {
 	
 	@Autowired
 	private CodecUtil codecUtil;
+	@Autowired
+	private ICustomerServices service;
 	
 	
+	public String doValidateCustomerEmail(String custEmail){
+		String msg=null;
+		if(service.isCustEmailExist(custEmail)){
+			msg="'"+custEmail+"' already exist";
+		}
+		return msg;
+	}
 	/*
 	 * This method will check request pwd and token
 	 * values with DB encoded values (pwd,token) after decoding

@@ -15,6 +15,7 @@ import com.app.model.User;
 import com.app.services.IUserServices;
 import com.app.util.CodeUtil;
 import com.app.util.CommonUtil;
+import com.app.validator.UserValidator;
 @Controller
 public class UserController {
 	@Autowired
@@ -23,7 +24,18 @@ public class UserController {
 	private CodeUtil codeUtil;
 	@Autowired
 	private CommonUtil commonUtil;
+	@Autowired
+	private UserValidator validator;
 	
+	
+	/**
+	 * show loginPage
+	 */
+	@RequestMapping("/showLogin")
+	public String showLogin(){
+		return "UserLogin";
+	}
+
 	
 	/**
 	 * show reg page
@@ -40,6 +52,13 @@ public class UserController {
 		//gen pwd and set obj
 		String pwd=codeUtil.getPwd();
 		user.setUserPwd(pwd);
+		//check data with validator 
+		String msg=validator.doValidateUserEmail(user.getUserEmail());
+		  if(msg!=null){
+		//data has error
+	    map.addAttribute("msg",msg);
+	      return "UserReg";
+		}else{
 		//save obj to DB using SL
 		int userId=service.saveUser(user);
 		//send msg to UI
@@ -48,16 +67,10 @@ public class UserController {
 		String text="welcome to user. Id is:"+user.getUserEmail()+
 				", password is:"+user.getUserPwd();
 		commonUtil.sendEmail(user.getUserEmail(), "User Registered..", text);
-		return "UserReg";
-	}
-	/**
-	 * show loginPage
-	 */
-	@RequestMapping("/showLogin")
-	public String showLogin(){
 		return "UserLogin";
+		}
 	}
-
+	
 	/**
 	 * Login process
 	 */
@@ -66,8 +79,7 @@ public class UserController {
 			@RequestParam("userId")String userEmail,
 			@RequestParam("password")String pwd,
 			HttpServletRequest req,ModelMap map){
-		
-		
+	
 		String pageName=null;
 		User user=service.getUserByUmailAndPwd(userEmail, pwd);
 		if(user!=null){

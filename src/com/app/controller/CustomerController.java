@@ -15,6 +15,7 @@ import com.app.services.ICustomerServices;
 import com.app.util.CodeUtil;
 import com.app.util.CodecUtil;
 import com.app.util.CommonUtil;
+import com.app.validator.CustomerValidator;
 @Controller
 public class CustomerController {
 	
@@ -26,6 +27,9 @@ public class CustomerController {
 	private CodecUtil codecUtil;
 	@Autowired
 	private CommonUtil commonUtil;
+	@Autowired
+	private CustomerValidator validator;
+	
 
 	@RequestMapping("/regCust")
 	public String showVenReg(ModelMap map)
@@ -60,8 +64,16 @@ public class CustomerController {
 		cust.setToken(codecUtil.doEncode(encToken));
 		cust.setPwd(codecUtil.doEncode(encPwd));
 		
+		//check data with validator 
+	 String msg=validator.doValidateCustomerEmail(cust.getCustEmail());
+		if(msg!=null){
+	  //data has error
+	 map.addAttribute("msg",msg);
+	 return "CustomerReg";
+		}else{
+	    //save data-no error
 		//5.save data to d
-		int custId=service.saveCustomer(cust);
+	int custId=service.saveCustomer(cust);
 		
 		//6.send email
 		if(custId!=0)
@@ -74,11 +86,11 @@ public class CustomerController {
 		    }
 		
 		//7.send message to UI
-		String msg="Customer Saved with id:"+custId;
+	    msg="Customer Saved with id:"+custId;
 		map.addAttribute("msg", msg);
 		return "CustomerReg";
+		}
 	}
-	
 	/**
 	 * This method is used to
 	 * fetch all records from DB

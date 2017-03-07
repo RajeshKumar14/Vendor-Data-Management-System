@@ -34,6 +34,7 @@
 			</tr>
 		</table>
 	</form>
+	${msg}
 <%@include file="Footer.jsp" %>
 </body>
 </html>
