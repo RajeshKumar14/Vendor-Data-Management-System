@@ -106,7 +106,7 @@ public class UserController {
 		ses.setAttribute("userName", null);
 		ses.invalidate();
 		map.addAttribute("msg", "Logout success...");
-		return "UserLogin";
+		return "Home";
 	}
 
 }

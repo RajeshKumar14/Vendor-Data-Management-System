@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
 	
-	@RequestMapping("/index")
+	@RequestMapping("/home")
 	public String showVenReg(ModelMap map)
 	{
-		return "index";
+		return "Home";
 		}
 	
 }

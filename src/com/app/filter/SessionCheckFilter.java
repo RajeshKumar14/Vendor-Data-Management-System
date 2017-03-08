@@ -44,7 +44,7 @@ public class SessionCheckFilter implements Filter {
 				//check session
 				HttpSession ses=req.getSession(false);
 				if(ses==null || ses.getAttribute("userName")==null)
-					res.sendRedirect(req.getContextPath()+"/mvc/showLogin");
+					res.sendRedirect(req.getContextPath()+"/mvc/home");
 			}
 			
 		} catch (Exception e) {

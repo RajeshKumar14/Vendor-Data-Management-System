@@ -207,8 +207,15 @@ text-decoration: underline;
 /* content */
 #template_content_wrapper {
 	width: 900px;
-	height:300px;
+	height:auto;
 	margin: 0 auto;
 	padding: 40px 40px;
-	background-color:#ECF0F1;  
+	background-color:#EAEDED;
+}
+#template_content {
+	width:600px;
+	height:auto;
+	margin: 0 auto;
+	padding: 40px 40px;
+	background-color:#FDFEFE;
 }
