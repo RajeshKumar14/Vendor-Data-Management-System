@@ -5,7 +5,7 @@ body{
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 17px;
 	color: #555a4a;
-    background: #a0c73f;
+    background: #F5FFFA;
 }
 
 a:link, a:visited { 
@@ -22,7 +22,7 @@ text-decoration: underline;
 #vdm_header_wrapper {
 	width: 100%;
 	height: 130px;
-    background-color:#C63D0F;	
+    background-color:#4c0080;	
 }
 
 #vdm_header{
@@ -70,7 +70,7 @@ text-decoration: underline;
 }
 
 #vdm_header_menu li a:link,#vdm_header_menu li a:active,#vdm_header_menu li a:visited{
-	background:#C63D0F;
+	background:#4c0080;
 	color:#fff;
 }
 /* end of menu */
