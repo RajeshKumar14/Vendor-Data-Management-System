@@ -32,6 +32,6 @@ table tr th{
 </tr>
 </c:forEach>
 </table>
-<%@include file="Footer.jsp" %>
+<%@include file="vdmFooter.jsp" %>
 </body>
 </html>

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/footer.css">
 
 		<footer class="footer-distributed" >
-
 			<div class="footer-left">
 				<h3>Help</h3>
 				<nav class="footer-links">

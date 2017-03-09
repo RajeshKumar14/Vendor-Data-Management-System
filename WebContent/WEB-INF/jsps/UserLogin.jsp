@@ -4,7 +4,7 @@
 <link href='../css/header.css' type='text/css' rel='stylesheet'/>   
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Log in to Priyakart </title>
-<%@include file="Header.jsp" %>
+<%@include file="itemHeader.jsp" %>
 <section id="template_content_wrapper">
   <div id="template_content">
    <form name="loginForm" action="loginUser" method="post">
@@ -18,4 +18,4 @@
     <p align="center"><a href="regUser">New to Priyakart? SignUp</a></p> 
   </div> <!-- end of content -->
 </section>
-<%@include file="Footer.jsp" %>
+<%@include file="itemFooter.jsp" %>

@@ -55,6 +55,6 @@ table tr th{
 	</form>
 ${msg}<br/>
 <a href="viewAllCust">View All Records</a>
-<%@include file="Footer.jsp" %>
+<%@include file="vdmFooter.jsp" %>
 </body>
 </html>

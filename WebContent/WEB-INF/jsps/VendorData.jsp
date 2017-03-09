@@ -36,6 +36,6 @@ table tr th{
 </table>
 <a href="venExcelExport">Download Excel</a>
 | <a href="venPdfExport">Download PDF</a>
-<%@include file="Footer.jsp" %>
+<%@include file="vdmFooter.jsp" %>
 </body>
 </html>

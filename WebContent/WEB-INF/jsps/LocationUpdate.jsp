@@ -51,6 +51,6 @@ table tr th{
 		</table>
 	</form>
 	${msg}<br/>
-<%@include file="Footer.jsp" %>
+<%@include file="vdmFooter.jsp" %>
 </body>
 </html>

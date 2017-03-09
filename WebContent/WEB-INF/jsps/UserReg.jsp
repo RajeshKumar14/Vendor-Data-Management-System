@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Register to Priyakart</title>
-<%@include file="Header.jsp" %>
+<%@include file="itemHeader.jsp" %>
 <section id="template_content_wrapper">
   <div id="template_content">
   
@@ -12,7 +12,7 @@
 	   <tr><td>Name</td><td><input type="text" name="userName" /></td></tr>
 	   <tr><td>Email Id</td><td><input type="text" name="userEmail"></td></tr>
 	   <tr><td>Mobile No</td><td><input type="text" name="mobileNum"></td></tr>
-	   <tr><td>Address </td><td><textarea rows="5" cols="15" name="address" ></textarea><br></td></tr>
+	   <tr><td>Address </td><td><textarea rows="5" cols="22" name="address" ></textarea><br></td></tr>
 	   <tr><td colspan="2" align="center"><input type="submit" value="Submit">&nbsp;
 		<input type="reset"value="Clear"> <br></td></tr>
     </table>
@@ -20,4 +20,4 @@
 	${msg}
    </div> <!-- end of content -->
 </section>
-<%@include file="Footer.jsp" %>
+<%@include file="itemFooter.jsp" %>

@@ -1,12 +1,18 @@
 
-<link href='../css/header.css' type='text/css' rel='stylesheet'/>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link href='../css/header.css' type='text/css' rel='stylesheet'/>
 
 <!-- Start of template_header_wrapper -->
 <header id="template_header_wrapper">
   <div id="template_header"> 
       <nav id='template_menu1'>
         <ul>
-          <li><a href="#">Sell on Priyakart</a></li>
+          <li><a href="priyakart">Sell on Priyakart</a></li>
           <li><a href="#">GiftCard </a></li>
           <li><a href="#">Customer Care </a></li>
           <li><a href="#">Track Order</a></li>

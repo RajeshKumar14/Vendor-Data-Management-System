@@ -3,4 +3,4 @@
 <center><img src="../reportA.jpg" align="middle"/></center>
 <br/>
 <center><img src="../reportB.jpg"  align="middle"/></center>
-<%@include file="Footer.jsp"%>
+<%@include file="vdmFooter.jsp"%>

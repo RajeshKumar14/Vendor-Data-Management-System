@@ -45,6 +45,6 @@
 	</form>
 ${msg}<br/>
 <a href="viewAllVen">View All Records</a>
-<%@include file="Footer.jsp" %>
+<%@include file="vdmFooter.jsp" %>
 </body>
 </html>

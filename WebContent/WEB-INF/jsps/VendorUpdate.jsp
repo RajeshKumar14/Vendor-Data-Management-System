@@ -52,6 +52,6 @@
 			</tr>
 		</table>
 	</form>
-	<%@include file="Footer.jsp" %>
+	<%@include file="vdmFooter.jsp" %>
 </body>
 </html>
