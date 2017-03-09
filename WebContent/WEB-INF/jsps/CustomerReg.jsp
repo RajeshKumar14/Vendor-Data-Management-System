@@ -14,7 +14,7 @@ table tr th{
 </style>
 </head>
 <body>
-<%@include file="Master.jsp" %>
+<%@include file="vdmHeader.jsp" %>
    <br>
 	<form name="custForm" action="insertCust" method="post"  onsubmit="return doValidateCustForm();">
 		<table border="1" cellpadding="10" align="center">

@@ -15,7 +15,7 @@ table tr th{
 </style>
 </head>
 <body>
-<%@include file="Master.jsp" %>
+<%@include file="vdmHeader.jsp" %>
 <br>
 <table border="1"  align="center" cellpadding="10">
 <tr><th colspan="6">Vendor Details</th></tr>

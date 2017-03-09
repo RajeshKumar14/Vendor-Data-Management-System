@@ -5,7 +5,6 @@
 <link href='../css/header.css' type='text/css' rel='stylesheet'/>
 
 <title>Location</title>
-
 <%@include file="vdmHeader.jsp" %>
 <section id="template_content_wrapper">
   <div id="template_content">

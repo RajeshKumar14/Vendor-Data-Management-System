@@ -9,7 +9,7 @@
 <title>VendorReg</title>
 </head>
 <body>
-<%@include file="Master.jsp" %>
+<%@include file="vdmHeader.jsp" %>
    <br>
 	<form name="venForm" action="insertVen" method="post"   enctype="multipart/form-data"  onsubmit="return doValidateVenForm();">
 		<table border="1" cellpadding="10" align="center">

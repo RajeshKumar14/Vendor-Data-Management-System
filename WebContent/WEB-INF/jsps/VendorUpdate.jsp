@@ -8,7 +8,7 @@
 <title>Edit Vendor</title>
 </head>
 <body>
-<%@include file="Master.jsp" %>
+<%@include file="vdmHeader.jsp" %>
    <br>
 	<form action="venUpdate" method="post">
 		<table border="1"  cellpadding="10" align="center">

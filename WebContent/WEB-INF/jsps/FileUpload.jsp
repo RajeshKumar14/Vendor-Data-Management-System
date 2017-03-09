@@ -14,7 +14,7 @@ a {
 </style>
 </head>
 <body>
-<%@include file="Master.jsp" %>
+<%@include file="vdmHeader.jsp" %>
 <br>
 <form action="uploadData" method="post" enctype="multipart/form-data">
 <table border="1" cellpadding="10" align="center">

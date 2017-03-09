@@ -17,7 +17,7 @@ table tr th{
 
 </head>
 <body>
-<%@include file="Master.jsp" %>
+<%@include file="vdmHeader.jsp" %>
    <br>
 	<form name="locForm"action="locUpdate" method="post" onsubmit="return doValidateLocForm();">
 		<table border="1"  cellpadding="10" align="center">
