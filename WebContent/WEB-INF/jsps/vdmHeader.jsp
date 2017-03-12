@@ -1,6 +1,4 @@
-<link href='../css/seller_hub.css' type='text/css' rel='stylesheet'/>
-<link href='../css/vdm_header.css' type='text/css' rel='stylesheet'/>
-
+<link href='../css/design.css' type='text/css' rel='stylesheet'/>
 <!-- Start of vdm_header_wrapper -->
 <header id="vdm_header_wrapper">
   <div id="vdm_header"> 
@@ -14,6 +12,6 @@
           <li><a href="logout">Logout</a></li>
         </ul>
       </nav> 
-  </div> <!-- end of template_header -->
+  </div> <!-- end of vdm_header -->
    <div align="right">Welcome to User : ${userName}</div>
-</header> <!-- end of template_header_wrapper -->
+</header> <!-- end of vdm_header_wrapper -->

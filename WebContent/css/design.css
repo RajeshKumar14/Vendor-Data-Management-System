@@ -1,0 +1,956 @@
+body{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 17px;
+	color: #555a4a;
+    background: #F5FFFA;
+}
+
+a:link, a:visited { 
+color: blue; 
+text-decoration: none; 
+font-weight: normal; 
+} 
+a:active, a:hover { 
+color: deeppink; 
+text-decoration: underline;
+}
+
+/*---Item Main Part-----*/
+#home_header_wrapper {
+	width: 100%;
+	height: 140px;
+    background-color:#4c0080;	
+}
+
+#home_header{
+	position: relative;
+	width:1200px;
+	height:265px;		
+	padding: 0 0px;
+	margin: 0 auto;
+}
+
+/*------Seller Home Page-------*/
+#sellerHome_header_wrapper {
+	width: 100%;
+	height: 130px;
+    background-color:#4c0080;	
+}
+#sellerHome_header{
+	position: relative;
+	width:1200px;
+	height:265px;		
+	padding: 0 0px;
+	margin: 0 auto;
+}
+
+/*-----VDM_Header_module---*/
+#vdm_header_wrapper {
+	width: 100%;
+	height: 130px;
+    background-color:#4c0080;	
+}
+
+#vdm_header{
+	position: relative;
+	width:1200px;
+	height:265px;		
+	padding: 0 0px;
+	margin: 0 auto;
+}
+
+/*---sellerTitle--------*/
+#sellerHome_header #seller_title {
+	float: left;
+	width: 220px;
+	padding:0px;
+}
+
+#seller_title h1 {
+	margin-top:13px;
+	margin-left:40px;
+	padding:0px;
+	
+}
+
+#seller_title h1 a {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#seller_title h1 a:hover {
+	font-weight: bold;	
+	text-decoration: none;
+}
+
+#seller_title h1 a span {
+	display: block;
+	margin-left:2px;
+	font-size: 14px;
+	color: #416902;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+
+/*---seller menu------*/
+#seller_menu{
+    text-align:center;
+    margin-top:90px;
+    margin-left:-215px;
+	float: left;
+	height: 43px;	
+}
+
+#seller_menu ul{
+	margin: 0px;
+	padding: 0;
+	list-style: none;	
+}
+#seller_menu ul li {
+	padding: 0;
+	display:inline;
+    margin:0px 0px;
+}
+
+#seller_menu ul li a {
+	float:left;
+	display: block;
+	width: 120px;
+	height: 25px;
+	text-align:center;
+	font-size: 16px;
+	text-decoration: none;
+	color: #333333;	
+	outline: none;
+}
+
+#seller_menu li a:hover, #seller_menu li a.current {
+	color: #333333;
+}
+
+#seller_menu li a:link,#seller_menu li a:active,#seller_menu li a:visited{
+	background:#4c0080;
+	color:#fff;
+}
+/* end of menu */
+
+/*----Item menu top--------*/
+
+#item_top_menu {
+    text-align:right;
+    margin-top:3px;
+    margin-right:0px;
+	float: right;
+	padding-top:8px;
+	height: 43px;	
+}
+
+#item_top_menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;	
+}
+#item_top_menu ul li {
+	padding: 0;
+	display:inline;
+    margin:0px 0px;
+}
+
+#item_top_menu ul li a {
+	float:left;
+	display: block;
+	height: 25px;
+	padding:2px;
+	width: 110px;
+	text-align:right;
+	font-size: 12px;
+	text-decoration: none;
+	color: #333333;	
+	font-weight: bold;
+	outline: none;
+}
+
+#item_top_menu li a:hover, #item_top_menu li a.current {
+	color: #333333;
+}
+
+#item_top_menu li a:link,#item_top_menu li a:active,#item_top_menu li a:visited{
+	background:#4c0080;
+	color:#fff;
+}
+
+/*-------item bottom menu----*/
+#item_bottom_menu{
+    text-align:center;
+    margin-top:-3px;
+    margin-left:190px;
+	float: left;
+	padding-top:0px;
+	height: 43px;	
+}
+
+#item_bottom_menu ul{
+	margin: 0px;
+	padding: 0;
+	list-style: none;	
+}
+#item_bottom_menu ul li {
+	padding: 0;
+	display:inline;
+    margin:0px 0px;
+}
+
+#item_bottom_menu ul li a {
+	float:left;
+	display: block;
+	width: 120px;
+	height: 25px;
+	text-align:center;
+	font-size: 16px;
+	text-decoration: none;
+	color: #333333;	
+	outline: none;
+}
+
+#item_bottom_menu li a:hover, #item_bottom_menu li a.current {
+	color: #333333;
+}
+
+#item_bottom_menu li a:link,#item_bottom_menu li a:active,#item_bottom_menu li a:visited{
+	background:#4c0080;
+	color:#fff;
+}
+
+/*---vdm_header_menu----*/
+#vdm_header_menu{
+    text-align:center;
+    margin-top:90px;
+    margin-left:20px;
+	float: left;
+	height: 43px;	
+}
+
+#vdm_header_menu ul{
+	margin: 0px;
+	padding: 0;
+	list-style: none;	
+}
+#vdm_header_menu ul li {
+	padding: 0;
+	display:inline;
+    margin:0px 0px;
+}
+
+#vdm_header_menu ul li a {
+	float:left;
+	display: block;
+	width: 120px;
+	height: 25px;
+	text-align:center;
+	font-size: 16px;
+	text-decoration: none;
+	color: #333333;	
+	outline: none;
+}
+
+#vdm_header_menu li a:hover, #vdm_header_menu li a.current {
+	color: #333333;
+}
+
+#vdm_header_menu li a:link,#vdm_header_menu li a:active,#vdm_header_menu li a:visited{
+	background:#4c0080;
+	color:#fff;
+}
+/* end of vdm_header_menu--*/
+/**--------Web page Title------*/
+
+#home_header #priyakart_title {
+	float: left;
+	width: 220px;
+	padding:0px;
+}
+
+#priyakart_title h1 {
+	margin-top:53px;
+	padding:0px;
+}
+
+#priyakart_title h1 a {
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#priyakart_title h1 a:hover {
+	font-weight: bold;	
+	text-decoration: none;
+}
+
+#priyakart_title h1 a span {
+	display: block;
+	margin-left: 2px;
+	font-size: 14px;
+	color: #416902;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+
+/* end of priyakart_title */
+
+#item_search_box {
+	position: absolute;
+	width: 765px;
+	height: 195px;
+	bottom: 22px;
+	left: 150px;
+}
+
+#item_search_box input{
+	background-color:#FFFFFF;
+	
+}
+#item_search_box form {
+	width: 880px;
+	height: 20px;
+	margin: 0px;
+	padding: 10px 0 0 0;
+}
+
+#item_search_input {
+	height: 35px;
+	width: 790px;
+	font-size: 14px;	
+}
+/* end of item_search_box */
+
+#item_search_button{
+ position:absolute;
+ font-size: 14px;
+ width:100px;
+ height:35px;
+ border:none;
+}
+
+#item_cart_button{
+	position:absolute;
+	right:18px;
+	bottom:13px;
+	width:110px;
+	height:195px;
+}
+#item_cart_button button{
+	background-color:#4c0080;
+	font-size:25px;
+	font-family:narrower;
+	font-style:bold;
+}
+
+/*-------content Writting-------*/
+
+#content_wrapper {
+	width: 900px;
+	height:auto;
+	margin: 0 auto;
+	padding: 40px 40px;
+	background-color:#EAEDED;
+}
+#content {
+	width:600px;
+	height:auto;
+	margin: 0 auto;
+	padding: 40px 40px;
+	background-color:#FDFEFE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------ITEM_FOOTER----------*/
+.footer-item_part{
+	background-color:#4c0080;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 45px 50px;
+	margin-top: 0px;
+}
+.footer-item_part .footer-left,
+.footer-item_part .footer-middle,
+.footer-item_part .footer-center,
+.footer-item_part .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+.footer-item_part .footer-left{
+	width: 25%;
+}
+
+/* The company logo */
+
+.footer-item_part h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-item_part h3 span{
+	color:  #5383d3;
+}
+
+
+
+/* Footer middle left */
+.footer-item_part .footer-middle{
+	width: 25%;
+}
+/* This is is nav title */
+.footer-item_part h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+.footer-item_part h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+.footer-item_part .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-item_part .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/* Footer Center */
+.footer-item_part .footer-center{
+	width: 25%;
+}
+
+.footer-item_part .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-item_part .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-item_part .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-item_part .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-item_part .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+.footer-item_part .footer-right{
+	width: 23%;
+}
+
+.footer-item_part .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-item_part .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-item_part .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-item_part .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-item_part .footer-company-name{
+	color:  #8f9296;
+	font-size: 16px;
+	font-weight: normal;
+	text-align:center;
+	margin: 0;
+}
+
+.footer-item_part .footer-company-name a{
+	text-decoration:none;
+	color:gray;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-item_part{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-item_part .footer-left,
+	.footer-item_part .footer-middle,
+	.footer-item_part .footer-center,
+	.footer-item_part .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-item_part .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+/*-----------seller_home-----*/
+.footer-seller_home{
+	background-color:#4c0080;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+.footer-seller_home .footer-left,
+.footer-seller_home .footer-middle,
+.footer-seller_home .footer-center,
+.footer-seller_home .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+.footer-seller_home .footer-left{
+	width: 25%;
+}
+
+/* The company logo */
+
+.footer-seller_home h3{
+	color:  #ffffff;
+	font: normal 22px;
+	margin: 0px;
+}
+
+/* Footer middle left */
+.footer-seller_home .footer-middle{
+	width: 25%;
+}
+/* This is is nav title */
+.footer-seller_home h3{
+	color:  #ffffff;
+	
+	margin: 0;
+}
+.footer-seller_home h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+.footer-seller_home .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-seller_home .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/* Footer Center */
+.footer-seller_home .footer-center{
+	width: 25%;
+}
+
+.footer-seller_home .footer-center i{
+	background-color:#4c0080;;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-seller_home .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-seller_home .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-seller_home .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-seller_home .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+.footer-seller_home .footer-right{
+	width: 23%;
+}
+
+.footer-seller_home .footer-social{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-seller_home .footer-social span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-seller_home .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-seller_home .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:#4c0080;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-seller_home .footer-company-name{
+	color:  #8f9296;
+	font-size: 16px;
+	font-weight: normal;
+	text-align:center;
+	margin: 0;
+}
+
+.footer-seller_home .footer-company-name a{
+	text-decoration:none;
+	color:gray;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-seller_home{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-seller_home .footer-left,
+	.footer-seller_home .footer-middle,
+	.footer-seller_home .footer-center,
+	.footer-seller_home .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-seller_home .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+/*----------Vdm_footer------------*/
+.footer-vdm{
+	background-color:#4c0080;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+.footer-vdm .footer-left,
+.footer-vdm .footer-middle,
+.footer-vdm .footer-center,
+.footer-vdm .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+.footer-vdm .footer-left{
+	width: 25%;
+}
+
+/* The company logo */
+
+.footer-vdm h3{
+	color:  #ffffff;
+	font: normal 22px;
+	margin: 0px;
+}
+
+/* Footer middle left */
+.footer-vdm .footer-middle{
+	width: 25%;
+}
+/* This is is nav title */
+.footer-vdm h3{
+	color:  #ffffff;
+	
+	margin: 0;
+}
+.footer-vdm h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+.footer-vdm .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-vdm .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+/* Footer Center */
+.footer-vdm .footer-center{
+	width: 25%;
+}
+
+.footer-vdm .footer-center i{
+	background-color:#4c0080;;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-vdm .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-vdm .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-vdm .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-vdm .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+.footer-vdm .footer-right{
+	width: 23%;
+}
+
+.footer-vdm .footer-social{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-vdm .footer-social span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-vdm .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-vdm .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:#4c0080;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-vdm .footer-company-name{
+	color:  #8f9296;
+	font-size: 16px;
+	font-weight: normal;
+	text-align:center;
+	margin: 0;
+}
+
+.footer-vdm .footer-company-name a{
+	text-decoration:none;
+	color:gray;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-vdm{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-vdm .footer-left,
+	.footer-vdm .footer-middle,
+	.footer-vdm .footer-center,
+	.footer-vdm .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-vdm .footer-center i{
+		margin-left: 0;
+	}
+
+}

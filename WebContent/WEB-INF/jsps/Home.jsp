@@ -5,9 +5,9 @@
 <link href='../css/header.css' type='text/css' rel='stylesheet'/>
 <%@include file="itemHeader.jsp" %>
 
-<section id="template_content_wrapper">
+<section id="content_wrapper">
 
-	<div id="template_content">
+	<div id="content">
     
       <h2> Under Construction</h2>
     

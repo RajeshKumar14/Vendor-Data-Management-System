@@ -1,20 +1,13 @@
 
+ <link href='../css/design.css' type='text/css' rel='stylesheet'/>
 
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="footer, address, phone, icons" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    <link href='../css/seller_hub.css' type='text/css' rel='stylesheet'/>
-
-<!-- Start of template_header_wrapper -->
-<header id="template_header_wrapper">
-  <div id="template_header"> 
-	  <div id="hub_title">
+<!-- Start of sellerHome_header_wrapper -->
+<header id="sellerHome_header_wrapper">
+  <div id="sellerHome_header"> 
+	  <div id="seller_title">
         <h1><a href="priyakart"><img  width="169" height="70" src="../imgs/sellers-hub.jpg" alt="Home" /></a></h1>
       </div>
-	   <nav id='template_menu'>
+	   <nav id='seller_menu'>
         <ul>
          <li><a href="priyakart">HOME</a></li>
          <li><a href="pricing">PRICING</a></li>
@@ -32,5 +25,5 @@
              </table>
           </form>
 	  </div>
-  </div> <!-- end of template_header -->
-</header> <!-- end of template_header_wrapper -->
+  </div> <!-- end of sellerHome_header -->
+</header> <!-- end of sellerHome_header_wrapper -->

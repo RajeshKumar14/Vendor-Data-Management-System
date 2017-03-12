@@ -3,10 +3,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="footer, address, phone, icons" />
-    <link href='../css/seller_hub.css' type='text/css' rel='stylesheet'/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-		<footer class="footer-hub" >
+    <link href='../css/design.css' type='text/css' rel='stylesheet'/>
+		
+		<footer class="footer-vdm" >
 
 			<div class="footer-left">
 				<h3>SITEMAP</h3>

@@ -6,8 +6,8 @@
 <link href='../css/header.css' type='text/css' rel='stylesheet'/>
 <%@include file="sellerHeader.jsp" %>
 
-<section id="template_content_wrapper">
-	<div id="template_content">
+<section id="content_wrapper">
+	<div id="content">
     
 
     </div> <!-- end of content -->

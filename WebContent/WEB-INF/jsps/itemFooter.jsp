@@ -5,9 +5,9 @@
 	<meta name="keywords" content="footer, address, phone, icons" />
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/design.css">
 
-		<footer class="footer-distributed" >
+		<footer class="footer-item_part" >
 			<div class="footer-left">
 				<h3>Help</h3>
 				<nav class="footer-links">

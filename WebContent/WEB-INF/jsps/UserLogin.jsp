@@ -8,10 +8,10 @@
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link href='../css/header.css' type='text/css' rel='stylesheet'/>
 
-<!-- Start of template_header_wrapper -->
-<header id="template_header_wrapper">
-  <div id="template_header"> 
-      <nav id='template_menu1'>
+<!-- Start of home_header_wrapper -->
+<header id="home_header_wrapper">
+  <div id="home_header"> 
+      <nav id='item_top_menu'>
         <ul>
           <li><a href="priyakart">Sell on Priyakart</a></li>
           <li><a href="#">GiftCard </a></li>
@@ -22,22 +22,23 @@
         </ul>
       </nav>
 	
-	  <div id="site_title"><h1><a href="index.jsp"><img  width="149" src="../imgs/logo.png" alt="Priyakart" /></a></h1></div>
-	  <div id="search_box">
+	  <div id="priyakart_title">
+        <h1><a href="index.jsp"><img  width="149" src="../imgs/logo.png" alt="Priyakart" /></a></h1>
+      </div>
+	  <div id="item_search_box">
           <form action="#" method="post">
-              <input type="text"  id="searchfield" placeholder="Search for Product,Brands and More">
-              <button type="submit"  id="btn_search" name="search"><img width="60" height="30" src="../imgs/search_icon.ico"/></button>
+              <input type="text"  id="item_search_input" placeholder="Search for Product,Brands and More">
+              <button type="submit"  id="item_search_button" name="search"><img width="60" height="30" src="../imgs/search_icon.ico"/></button>
           </form>
 	  </div>
-	  <div id="cart_button">
+	  <div id="item_cart_button">
 	    <button type="submit" name="cart" value="CART" id="cart"><img width="60" height="30" src="../imgs/cart.png"/></button>
 	 </div>
-	 
-  </div> <!-- end of template_header -->
-</header> <!-- end of template_header_wrapper -->
+  </div> <!-- end of Home_header -->
+</header> <!-- end of Home_header_wrapper -->
 
-<section id="template_content_wrapper">
-  <div id="template_content">
+<section id="content_wrapper">
+  <div id="content">
    <form name="loginForm" action="loginUser" method="post">
      <table border="0" align="center" cellpadding="10">
       <tr><th colspan="2">Log In to Priyakart</th></tr>
