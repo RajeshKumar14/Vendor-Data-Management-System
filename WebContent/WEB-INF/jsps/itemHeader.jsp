@@ -2,7 +2,12 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link href='../css/design.css' type='text/css' rel='stylesheet'/>
+    <style>
+         #dyn{float:right;padding-right:40px;font-size:18px;}
+   </style>
+    
 
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
 <!-- Start of home_header_wrapper -->
 <header id="home_header_wrapper">
   <div id="home_header"> 
@@ -12,10 +17,17 @@
           <li><a href="#">GiftCard </a></li>
           <li><a href="#">Customer Care </a></li>
           <li><a href="#">Track Order</a></li>
-          <li><a href="regUser">SignUp </a></li>
+	<c:choose>
+	   <c:when test="${userName eq null}">
+		  <li><a href="regUser">SignUp </a></li>
           <li><a href="showLogin">LogIn </a></li>
-        </ul>
-      </nav>
+	   </c:when>
+	   <c:otherwise>
+		   <div>Hi <b> ${userName} !</b></div>
+	   </c:otherwise>
+     </c:choose>
+         </ul>
+       </nav>
 	
 	  <div id="priyakart_title">
         <h1><a href="index.jsp"><img  width="149" src="../imgs/logo.png" alt="Priyakart" /></a></h1>
